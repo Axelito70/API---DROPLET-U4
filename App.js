@@ -1,21 +1,13 @@
  import React, { useState, useEffect, createContext, useContext } from 'react';
  import AsyncStorage from '@react-native-async-storage/async-storage';
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  StyleSheet,
-  FlatList,
-  ActivityIndicator,
-  Modal,
-  Alert,
+import {View,Text,TextInput,TouchableOpacity,StyleSheet,FlatList,ActivityIndicator,Modal,Alert,
   ScrollView,
   StatusBar,
   Image,
   KeyboardAvoidingView,
   Platform
-} from 'react-native';
+} 
+from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -719,9 +711,8 @@ const ProvedoresPantalla = () => (
     endpoint="Proveedores" 
     title="Proveedores"
 
-    // 👇 RUTAS PERSONALIZADAS PARA AJUSTARSE A TU BACKEND
     customEndpoints={{
-      create: "insercion_Provedores",   // POST CORRECTO SEGÚN TU API
+      create: "insercion_Provedores",   
       update: "actualizar_Proveedores",
       delete: "eliminar_Proveedores"
     }}
